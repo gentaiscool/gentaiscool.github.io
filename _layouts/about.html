@@ -1,0 +1,116 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% endif %}
+
+{% if page.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork" style="padding-right:10px">
+    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
+    {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date: "%B %d, %Y" }}">{% endif %}
+
+    <div class="page__inner-wrap">
+      {% unless page.header.overlay_color or page.header.overlay_image %}
+        <header>
+          {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+          {% if page.read_time %}
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+          {% endif %}
+        {% if page.modified %}
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
+        {% endif %}
+        
+        {% if page.collection == 'teaching' %}
+          <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif page.venue and page.date %}
+          <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif page.date %}
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+        {% endif %}
+        
+             
+        {% if page.citation and page.paperurl %}
+          <p>Recommended citation: {{ page.citation }} <a href="{{ page.paperurl }}"><u>{{ page.paperurl }}</u></a></p>
+        {% elsif page.citation %}
+          <p>Recommended citation: {{ page.citation }} </p>
+        {% endif %}
+    
+        </header>
+      {% endunless %}
+
+      <section class="page__content" itemprop="text">
+        {{ content }}
+
+        <!-- Custom content I moved them here -->
+        <div style="font-size:16px">
+          <div style="line-height: 1.5em;">
+          <!-- <div style="line-height: 1.8em;">My name is <mark style="background-color:#d47a05;padding:3px;color:#ffffff;font-size:16px">Genta.  -->
+            I am a Ph.D. candidate at Electronic and Computer Engineering Department and <u><a href="https://caire.ust.hk/" style="color:#1a3196">Center for AI Research (CAiRE)</a></u>, The Hong Kong University of Science and Technology supervised by <u><a href="http://www.ee.ust.hk/~pascale/" style="color:#1a3196">Prof. Pascale Fung</a></u>. 
+            Previously, I completed my Bachelor in Computer Science at <u><a href="https://www.itb.ac.id/" style="color:#1a3196">Institut Teknologi Bandung</a></u>. 
+            <br/><br/>
+            My current research interests lie primarily in the area of the Natural Language Understanding, Multilingual, Cross-lingual, Code-Switching, Dialogue, and Speech.
+            <br/><br/>
+            I am also the Program Committee and Reviewer of ACL 2020 and several workshops such as <a href="https://www.humanizing-ai.com/program.html" style="color:#000000">Humanizing AI at IJCAI 2019</a> and <a href="https://cod1r.github.io/Code-Switching/" style="color:#000000">4th Code-Switching Workshop at LREC 2020</a>.
+          </div>
+        </div>
+        <br/>
+        {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+      </section>
+
+      <h1 class="page__title" itemprop="headline">Highlights</h1>
+      <ul style="line-height:100%; font-size:16px">
+        <!-- <li>Program Committee of <a href="https://cod1r.github.io/Code-Switching/" style="color:#000000">4th Code-Switching Workshop, LREC 2020</a></li> -->
+        <li><a href="https://arxiv.org/abs/1910.13923" style="color:#000000">Low-Rank Transformer</a> is accepted at ICASSP 2020 (oral)</li>
+        <li>Two papers accepted at AAAI 2020 (oral and demo)</li>
+        <li>Two papers accepted at EMNLP 2019</li>
+        <li><a href="https://www.aclweb.org/anthology/W19-4320.pdf" style="color:#000000">Multilingual Meta-Embeddings</a> won the <a href="https://twitter.com/seb_ruder/status/1157318969977704448" style="color:#000000">Best paper award at RepL4NLP, ACL 2019</a></li>
+        <!-- <li>Program Committee of <a href="https://www.humanizing-ai.com/program.html" style="color:#000000">Humanizing AI Workshop, IJCAI 2019</a></li> -->
+      </ul>
+
+      <div style="font-size:16px">Feel free to contact me via <a href="mailto:giwinata@connect.ust.hk" style="color:#000000">email</a>.</div style="line-height:100%; font-size:16px">
+
+      <footer class="page__meta">
+        {% if site.data.ui-text[site.locale].meta_label %}
+          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+        {% endif %}
+        {% include page__taxonomy.html %}
+      </footer>
+
+      {% if page.share %}{% include social-share.html %}{% endif %}
+
+      {% include post_pagination.html %}
+    </div>
+
+    {% if site.comments.provider and page.comments %}
+      {% include comments.html %}
+    {% endif %}
+  </article>
+
+  {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
+  {% if page.id and page.related and site.related_posts.size > 0 %}
+    <div class="page__related">
+      {% if site.data.ui-text[site.locale].related_label %}
+        <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h4>
+      {% endif %}
+      <div class="grid__wrapper">
+        {% for post in site.related_posts limit:4 %}
+          {% include archive-single.html type="grid" %}
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+</div>

@@ -1,0 +1,16 @@
+# main links links
+main:
+  - title: "Publications"
+    url: /publications/
+
+  # - title: "Bio"
+  #   url: /bio/    
+
+  # - title: "CV"
+  #   url: /files/cv.pdf
+
+  # - title: "Teaching"
+  #   url: /teaching/    
+        
+  # - title: "Blog"
+  #   url: /year-archive/
