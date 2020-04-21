@@ -1,12 +1,12 @@
 ---
 title: "On the Effectiveness of Low-Rank Matrix Factorization for LSTM Model Compression"
 collection: publications
-status: unpublished
+status: published
 permalink: /publication/2019-09-13-paper-lstm
 excerpt: ''
 date: 2019-09-13
 venue: 'The 33rd Pacific Asia Conference on Language, Information and Computation (PACLIC)'
-paperurl: ''
+paperurl: 'https://arxiv.org/pdf/1908.09982.pdf'
 authors: 'Genta Indra Winata, Andrea Madotto, Jamin Shin, Elham J. Barezi, Pascale Fung'
 citation: ''
 paper: 'https://arxiv.org/pdf/1908.09982.pdf'

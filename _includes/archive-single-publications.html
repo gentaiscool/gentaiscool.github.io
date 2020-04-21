@@ -34,13 +34,17 @@
             <!-- <p style="font-size:14px;margin:0px">Published in <i></i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p> -->
             <p style="font-size:14px;margin:0px">{{ post.venue }} {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
             {% elsif post.date %}
-            <p class="page__date" style="font-size:14px;margin:0px"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: " 1900-01-01 " | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+            <p class="page__date" style="font-size:14px;margin:0px"><strong><i class="fa fa-fw fa-calendar"
+            aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong>
+                <time datetime="{{ post.date | default: " 1900-01-01 " | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time>
+            </p>
             {% endif %} {% if post.collection == 'teaching' %} {% if post.excerpt and site.read_more != 'enabled' %}
             <p class="archive__item-excerpt" itemprop="description" style="margin:0px">{{ post.excerpt | markdownify }}</p>
             {% elsif post.excerpt and site.read_more == 'enabled' %}
             <p class="archive__item-excerpt" itemprop="description" style="margin:0px">
                 <p style="margin:0px">{{ post.excerpt | markdownify | remove: '
-                    <p style="margin:0px">' | remove: '</p style="margin:0px">' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p style="margin:0px">
+                    <p style="margin:0px">' | remove: '</p style="margin:0px">' }}<strong><a
+              href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p style="margin:0px">
             </p>
             {% endif %} {% endif %} {% if post.paper %}
             <u><a href="{{post.paper}}" style="padding:0px;margin:0px;font-size:14px">[PAPER]</a></u> {% endif %} {% if post.code %}
