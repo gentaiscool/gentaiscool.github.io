@@ -12,6 +12,8 @@
   {% assign title = post.title %}
 {% endif %}
 
+{% assign my_name = site.author.name %}
+
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
@@ -32,66 +34,77 @@
       <h3>{{ current_year }}</h3>
     {% endif %}
 
-    <h3 class="archive__item-title" itemprop="headline" style="font-size:18px">
-      <!-- {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
-      {% else %}
-        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
-      {% endif %} -->
-      {{ title }}
-    </h3>
-    
-    {% if post.read_time %}
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
-    {% endif %}
-
-    {% if post.authors %}
-      <p class="page__meta" style="font-size:16px;color:#000000">{{ post.authors }}</p>
-    {% endif %}
-
-    <div>
-      {% if post.collection == 'teaching' %}
-      <p style="font-size:14px;margin:0px"> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-      {% elsif post.collection == 'publications' and post.status == 'unpublished' %}
-        <!-- <p style="font-size:14px;margin:0px">Accepted in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p> -->
-        <p style="font-size:14px;margin:0px">{{ post.venue }} {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>    
-      {% elsif post.collection == 'publications' %}
-        <!-- <p style="font-size:14px;margin:0px">Published in <i></i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p> -->
-        <p style="font-size:14px;margin:0px">{{ post.venue }} {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-      {% elsif post.date %}
-        <p class="page__date" style="font-size:14px;margin:0px"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+    <div style="margin:0px;padding:0px;margin-left:35px">
+      <h3 class="archive__item-title" itemprop="headline" style="font-size:18px;margin-top:21px;">
+        <!-- {% if post.link %}
+          <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+        {% else %}
+          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+        {% endif %} -->
+        {{ title }}
+      </h3>
+      
+      {% if post.read_time %}
+        <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
       {% endif %}
 
-      {% if post.collection == 'teaching' %}
-        {% if post.excerpt and site.read_more != 'enabled' %}
-          <p class="archive__item-excerpt" itemprop="description" style="margin:0px">{{ post.excerpt | markdownify }}</p>
-          {% elsif post.excerpt and site.read_more == 'enabled' %}
-          <p class="archive__item-excerpt" itemprop="description" style="margin:0px"><p style="margin:0px">{{ post.excerpt | markdownify | remove: '<p style="margin:0px">' | remove: '</p style="margin:0px">' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p style="margin:0px"></p>
+      {% assign my_name = my_name %}
+      {% assign author_array = post.authors | split:my_name %}
+      <p style="font-size:16px;color:#000000;margin:0px;margin-bottom:5px;margin-top:2px">{{ author_array[0] | strip }} <x style="font-size:16px;color:#3b93eb"><b>{{ my_name | strip }}</b></x> <x style="margin-left:-5px">{{ author_array[1] | strip }}</x></p>
+      <p class="page__meta" style="display: none">{{ post.authors }}</p>
+      <!-- {% if post.authors %} -->
+        <!-- <p class="page__meta" style="font-size:16px;color:#000000">{{ post.authors }}</p> -->
+        <!-- <div class="page__meta">
+          <div style="font-size:16px;color:#000000">{{ author_array[0] }}</div>
+          <div style="font-size:16px;color:#777777"><b>{{ my_name }}</b></div>
+          <div style="font-size:16px;color:#000000">{{ author_array[1] }}</div>
+        </div> -->
+      <!-- {% endif %} -->
+
+      <div>
+        {% if post.collection == 'teaching' %}
+        <p style="font-size:14px;margin:0px"> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif post.collection == 'publications' and post.status == 'unpublished' %}
+          <!-- <p style="font-size:14px;margin:0px">Accepted in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p> -->
+          <p style="font-size:14px;margin:0px">{{ post.venue }} {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>    
+        {% elsif post.collection == 'publications' %}
+          <!-- <p style="font-size:14px;margin:0px">Published in <i></i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p> -->
+          <p style="font-size:14px;margin:0px">{{ post.venue }} {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif post.date %}
+          <p class="page__date" style="font-size:14px;margin:0px"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}
-      {% endif %}
 
-      {% if post.paper %}
-        <u><a href="{{post.paper}}" style="padding:0px;margin:0px;font-size:14px">[PAPER]</a></u>
-      {% endif %}
-      {% if post.code %}
-        <u><a href="{{post.code}}" style="padding:0px;margin:0px;font-size:14px">[CODE]</a></u>
-      {% endif %}
-      {% if post.poster %}
-        <u><a href="{{post.poster}}" style="padding:0px;margin:0px;font-size:14px">[POSTER]</a></u>
-      {% endif %}
-      {% if post.slide %}
-        <u><a href="{{post.slide}}" style="padding:0px;margin:0px;font-size:14px">[SLIDES]</a></u>
-      {% endif %}
-      {% if post.demo %}
-        <u><a href="{{post.demo}}" style="padding:0px;margin:0px;font-size:14px">[DEMO]</a></u>
-      {% endif %}
-      {% if post.video %}
-        <u><a href="{{post.video}}" style="padding:0px;margin:0px;font-size:14px">[VIDEO]</a></u>
-      {% endif %}
-      {% if post.award %}
-        <img src="/images/award.png" style="width:25px;height:25px;display:inline-block;vertical-align:top;"/> <div style="font-size:14px;color:#245dc1;display:inline-block;">{{ post.award }}</div>
-      {% endif %}
+        {% if post.collection == 'teaching' %}
+          {% if post.excerpt and site.read_more != 'enabled' %}
+            <p class="archive__item-excerpt" itemprop="description" style="margin:0px">{{ post.excerpt | markdownify }}</p>
+            {% elsif post.excerpt and site.read_more == 'enabled' %}
+            <p class="archive__item-excerpt" itemprop="description" style="margin:0px"><p style="margin:0px">{{ post.excerpt | markdownify | remove: '<p style="margin:0px">' | remove: '</p style="margin:0px">' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p style="margin:0px"></p>
+          {% endif %}
+        {% endif %}
 
+        {% if post.paper %}
+          <u><a href="{{post.paper}}" style="padding:0px;margin:0px;font-size:14px">[PAPER]</a></u>
+        {% endif %}
+        {% if post.code %}
+          <u><a href="{{post.code}}" style="padding:0px;margin:0px;font-size:14px">[CODE]</a></u>
+        {% endif %}
+        {% if post.poster %}
+          <u><a href="{{post.poster}}" style="padding:0px;margin:0px;font-size:14px">[POSTER]</a></u>
+        {% endif %}
+        {% if post.slide %}
+          <u><a href="{{post.slide}}" style="padding:0px;margin:0px;font-size:14px">[SLIDES]</a></u>
+        {% endif %}
+        {% if post.demo %}
+          <u><a href="{{post.demo}}" style="padding:0px;margin:0px;font-size:14px">[DEMO]</a></u>
+        {% endif %}
+        {% if post.video %}
+          <u><a href="{{post.video}}" style="padding:0px;margin:0px;font-size:14px">[VIDEO]</a></u>
+        {% endif %}
+        {% if post.award %}
+          <img src="/images/award.png" style="width:25px;height:25px;display:inline-block;vertical-align:top;"/> <div style="font-size:14px;color:#245dc1;display:inline-block;">{{ post.award }}</div>
+        {% endif %}
+
+      </div>
     </div>
 
     <!-- {% if post.citation and post.paperurl %}
