@@ -17,7 +17,7 @@ layout: default
 <div id="main" role="main">
   {% include sidebar.html %}
 
-  <article class="page" itemscope itemtype="http://schema.org/CreativeWork" style="padding-right:10px">
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork" style="padding-right:10%">
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
@@ -66,7 +66,7 @@ layout: default
             <br/><br/>
             I serve as the Program Committee and Reviewer:
             <ul>
-              <li>Conferences: ACL 2020, *SEM 2020, COLING 2020, EMNLP 2020, ICLR 2021, EACL 2021</li>
+              <li>Conferences: ACL 2020, *SEM 2020, COLING 2020, EMNLP 2020, ICLR 2021, AAAI 2021, EACL 2021</li>
               <li>Journals: <a href="https://dl.acm.org/journal/tallip" style="color:#000000">TALLIP</a></li>
               <li>Workshops: <a href="https://www.humanizing-ai.com/program.html" style="color:#000000">Humanizing AI at IJCAI 2019</a> and <a href="https://cod1r.github.io/Code-Switching/" style="color:#000000">4th Code-Switching Workshop at LREC 2020</a>, <a href="https://sites.google.com/view/sustainlp2020" style="color:#000000">SustaiNLP 2020</a></li>
             </ul>
