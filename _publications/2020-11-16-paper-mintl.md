@@ -11,5 +11,4 @@ authors: 'Zhaojiang Lin, Andrea Madotto, Genta Indra Winata, Pascale Fung'
 citation: ''
 code: 'https://github.com/zlinao/MinTL'
 paper: 'https://arxiv.org/pdf/2009.12005.pdf'
-show_year: true
 ---
