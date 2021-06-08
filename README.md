@@ -15,14 +15,16 @@ If you like the theme, give it a star!
 [![Preview](assets/img/al-folio-preview.png)](https://alshedivat.github.io/al-folio/)
 
 ## Easy build to github
+Go to `develop` branch
+
 Check CNAME file. It has to refer to the domain url.
 
-Run
+To compile the page. Run
 ```
 ./bin/deploy
 ```
 
-Then merge the branch to master
+Then merge the `gh-pages` branch to master
 
 ## User community
 
