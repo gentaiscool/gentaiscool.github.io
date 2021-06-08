@@ -1,16 +1,17 @@
 ---
-layout: publication
-title: "Publications"
+layout: page
 permalink: /publications/
-author_profile: true
+title: Publications
+description: Check the full publications <a href="https://scholar.google.com.hk/citations?user=7QxkToIAAAAJ&hl=en"><b>here</b></a>
+years: [2021,2020,2019,2018,2017]
+nav: true
 ---
 
-{% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
-{% endif %}
+<div class="publications">
 
-{% include base_path %}
-
-{% for post in site.publications reversed %}
-  {% include archive-single-publications.html %}
+{% for y in page.years %}
+  <h2 class="year">{{y}}</h2>
+  {% bibliography -f papers -q @*[year={{y}}]* %}
 {% endfor %}
+
+</div>

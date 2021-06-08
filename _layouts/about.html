@@ -2,136 +2,49 @@
 layout: default
 ---
 
-{% include base_path %}
+<div class="post">
 
-{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
-  {% include page__hero.html %}
-{% endif %}
+  <header class="post-header">
+    <h1 class="post-title">
+     {% if site.title == "blank" %}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{% else %}{{ site.title }}{% endif %}
+    </h1>
+     <p class="desc">{{ page.description }}</p>
+  </header>
 
-{% if page.url != "/" and site.breadcrumbs %}
-  {% unless paginator %}
-    {% include breadcrumbs.html %}
-  {% endunless %}
-{% endif %}
-
-<div id="main" role="main">
-  {% include sidebar.html %}
-
-  <article class="page" itemscope itemtype="http://schema.org/CreativeWork" style="padding-right:10%">
-    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
-    {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date: "%B %d, %Y" }}">{% endif %}
-
-    <div class="page__inner-wrap">
-      {% unless page.header.overlay_color or page.header.overlay_image %}
-        <header>
-          {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
-          {% if page.read_time %}
-            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
-          {% endif %}
-        {% if page.modified %}
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
-        {% endif %}
-        
-        {% if page.collection == 'teaching' %}
-          <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif page.venue and page.date %}
-          <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif page.date %}
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
-        {% endif %}
-        
-             
-        {% if page.citation and page.paperurl %}
-          <p>Recommended citation: {{ page.citation }} <a href="{{ page.paperurl }}"><u>{{ page.paperurl }}</u></a></p>
-        {% elsif page.citation %}
-          <p>Recommended citation: {{ page.citation }} </p>
-        {% endif %}
-    
-        </header>
-      {% endunless %}
-
-      <section class="page__content" itemprop="text">
-        {{ content }}
-
-        <!-- Custom content I moved them here -->
-        <div style="font-size:15px">
-          <div style="line-height: 1.4em;">
-          <!-- <div style="line-height: 1.8em;">My name is <mark style="background-color:#d47a05;padding:3px;color:#ffffff;font-size:16px">Genta.  -->
-            I am a Ph.D. candidate at Electronic and Computer Engineering Department and <u><a href="https://caire.ust.hk/" style="color:#1a3196">Center for AI Research (CAiRE)</a></u>, The Hong Kong University of Science and Technology supervised by <u><a href="http://www.ee.ust.hk/~pascale/" style="color:#1a3196">Prof. Pascale Fung</a></u>. 
-            Previously, I completed my Bachelor in Computer Science at <u><a href="https://www.itb.ac.id/" style="color:#1a3196">Institut Teknologi Bandung</a></u>. 
-            <br/><br/>
-            My current research interests lie primarily in the area of the Natural Language Understanding, Multilingual, Cross-lingual, Code-Switching, Dialogue, and Speech.
-            <br/><br/>
-            I serve as the Program Committee and Reviewer:
-            <ul>
-              <li>Conferences: ACL (2020, 2021), *SEM (2020, 2021), COLING 2020, EMNLP (2020, 2021), ICLR 2021, NeurIPS 2021, AAAI 2021, EACL 2021, NAACL 2021, ICoICT 2021</li>
-              <li>Journals: <a href="https://dl.acm.org/journal/tallip" style="color:#000000">TALLIP (2020)</a>, <a href="https://www.journals.elsevier.com/machine-learning-with-applications/" style="color:#000000">Machine Learning with Applications (2021)</a>, <a href="https://www.springer.com/journal/10270" style="color:#000000">Software and Systems Modeling (2021)</a></li>
-              <li>Workshops: <a href="https://www.humanizing-ai.com/program.html" style="color:#000000">Humanizing AI at IJCAI 2019</a> and <a href="https://cod1r.github.io/Code-Switching/" style="color:#000000">4th Code-Switching Workshop at LREC 2020</a>, <a href="https://sites.google.com/view/sustainlp2020" style="color:#000000">SustaiNLP 2020</a>, Code-Switching Workshop 2021</li>
-            </ul>
-          </div>
+  <article>
+    {% if page.profile %}
+    <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+      {% if page.profile.image %}
+        <img class="img-fluid z-depth-1 rounded" src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}">
+      {% endif %}
+      {% if page.profile.address %}
+        <div class="address">
+          {{ page.profile.address }}
         </div>
-        <br/>
-        {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
-      </section>
+      {% endif %}
+    </div>
+    {% endif %}
 
-      <h1 class="page__title" itemprop="headline">Highlights</h1>
-      <h3>2021</h3>
-      <ul style="line-height:100%; font-size:15px">
-        <li>I defended my thesis "Multilingual Transfer Learning for Code-Switched Language and Speech Neural Modeling"!</li>
-        <li>One paper has been accepted at AAAI 2021</li>
-      </ul>
-      <h3>2020</h3>
-      <ul style="line-height:100%; font-size:15px">
-        <!-- <li>Program Committee of <a href="https://cod1r.github.io/Code-Switching/" style="color:#000000">4th Code-Switching Workshop, LREC 2020</a></li> -->
-        <li>I will chair a session at <a href="https://www.microsoft.com/en-us/research/event/workshop-on-speech-technologies-for-code-switching-2020/" style="color:#000000">First Workshop on Speech Technologies for Code-switching in Multilingual Communities 2020</a></li>
-        <li>Three papers have been accepted at EMNLP (2 long papers and 1 findings)</li>
-        <li><a href="https://arxiv.org/pdf/2009.05387.pdf" style="color:#000000">IndoNLU</a>, the first-ever Indonesian Benchmark has been accepted at AACL-IJCNLP, 2020</li>
-        <li><a href="https://arxiv.org/pdf/2003.01901.pdf" style="color:#000000">Cross-Accented ASR</a> paper has been accepted at Interspeech, 2020</li>
-        <li>I have accepted an internship offer from Salesforce Research for summer 2020!</li>
-        <li><a href="https://arxiv.org/pdf/2002.05923.pdf" style="color:#000000">Zero-shot Cross-Domain Named Entity Recognition</a> paper has been accepted at RepL4NLP, 2020</li>
-        <li>Two papers <a href="https://arxiv.org/abs/2004.11727" style="color:#000000">Coach</a> and <a href="https://arxiv.org/abs/2004.14228" style="color:#000000">Meta-Transfer Learning</a> have been accepted at ACL 2020</li>
-        <li><a href="https://arxiv.org/abs/1910.13923" style="color:#000000">Low-Rank Transformer</a> has been accepted at ICASSP 2020 (oral)</li>
-        <li>Two papers have been accepted at AAAI 2020 (oral and demo)</li>
-      </ul>
-      <h3>2019</h3>
-      <ul style="line-height:100%; font-size:15px">
-        <li>Two papers have been accepted at EMNLP 2019</li>
-        <li><a href="https://www.aclweb.org/anthology/W19-4320.pdf" style="color:#000000">Multilingual Meta-Embeddings</a> won the <a href="https://twitter.com/seb_ruder/status/1157318969977704448" style="color:#000000">Best paper award at RepL4NLP, ACL 2019</a></li>
-        <!-- <li>Program Committee of <a href="https://www.humanizing-ai.com/program.html" style="color:#000000">Humanizing AI Workshop, IJCAI 2019</a></li> -->
-      </ul>
-
-      <div style="font-size:16px">Feel free to contact me via <a href="mailto:giwinata@connect.ust.hk" style="color:#000000">email</a>.</div style="line-height:100%; font-size:16px">
-
-      <footer class="page__meta">
-        {% if site.data.ui-text[site.locale].meta_label %}
-          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
-        {% endif %}
-        {% include page__taxonomy.html %}
-      </footer>
-
-      {% if page.share %}{% include social-share.html %}{% endif %}
-
-      {% include post_pagination.html %}
+    <div class="clearfix">
+      {{ content }}
     </div>
 
-    {% if site.comments.provider and page.comments %}
-      {% include comments.html %}
+    {% if page.news %}
+      {% include news.html %}
+    {% endif %}
+
+    {% if page.selected_papers %}
+      {% include selected_papers.html %}
+    {% endif %}
+
+    {% if page.social %}
+    <div class="social">
+      <div class="contact-icons">
+        {% include social.html %}
+      </div>
+      <div class="contact-note">{{ site.contact_note }}</div>
+    </div>
     {% endif %}
   </article>
 
-  {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
-  {% if page.id and page.related and site.related_posts.size > 0 %}
-    <div class="page__related">
-      {% if site.data.ui-text[site.locale].related_label %}
-        <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h4>
-      {% endif %}
-      <div class="grid__wrapper">
-        {% for post in site.related_posts limit:4 %}
-          {% include archive-single.html type="grid" %}
-        {% endfor %}
-      </div>
-    </div>
-  {% endif %}
 </div>
