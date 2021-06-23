@@ -15,7 +15,7 @@ If you like the theme, give it a star!
 [![Preview](assets/img/al-folio-preview.png)](https://alshedivat.github.io/al-folio/)
 
 ## Easy build to github
-Go to `develop` branch
+Go to `source` branch
 
 Check CNAME file. It has to refer to the domain url.
 
