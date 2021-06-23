@@ -21,10 +21,10 @@ Check CNAME file. It has to refer to the domain url.
 
 To compile the page. Run
 ```
-./bin/deploy
+./bin/deploy --user
 ```
 
-Then merge the `gh-pages` branch to master
+It will automatically create the `master` branch from the `source` branch.
 
 ## User community
 
