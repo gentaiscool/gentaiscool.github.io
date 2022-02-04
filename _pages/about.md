@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: HKUST
+description: Bloomberg LP
 
 profile:
   align: right
