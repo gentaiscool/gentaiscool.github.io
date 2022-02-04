@@ -16,7 +16,7 @@ nav: true
 <h3>🧑‍💻 Working Experience</h3>
 <hr/>
 <ul>
-<li><b>Researcher</b> at Bloomberg</li>
+<li><b>Researcher</b> at Bloomberg LP</li>
 <li><b>Research Assistant</b> at The Hong Kong University of Science and Technology</li>
 <li><b>Research Intern</b> at Salesforce Research</li>
 <li><b>Marketing Technology Analyst</b> at Traveloka</li>
