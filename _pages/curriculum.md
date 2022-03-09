@@ -51,7 +51,7 @@ nav: true
 <li><b>2nd Winner of Gemastik 7 in Data Mining 2014</b> held by Ministry of National Education and Culture Republic of Indonesia, Universitas Gadjah Mada</li>
 <li><b>1st Winner of Gemastik 7 in Business Game 2014</b> held by Ministry of National Education and Culture Republic of Indonesia, Universitas Gadjah Mada</li>
 <li><b>Runner Up of World Summit Youth Award 2014 in Go Green!</b> for GoPublic</li>
-<li><b>World Semifinalist/National Winner of Imagine Cup 2014 in Innovation</b>for Smoothies</li>
+<li><b>World Semifinalist/National Winner of Imagine Cup 2014 in Innovation</b> for Smoothies</li>
 <li><b>15th Position in IEEEXtreme 7.0 Programming Competition 2013</b></li>
 <li><b>
 1st Winner in ThinkQuest International Competition 2011</b> for Project Events (Age 19 and under)</li>
