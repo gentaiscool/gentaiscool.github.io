@@ -29,7 +29,7 @@ nav: true
 <ul>
 <li><b>Reviewer and Program Committee</b>
     <ul>
-    <li><b>Conferences</b> ACL, NAACL, EACL, EMNLP, *SEM, COLING, ICLR, NeurIPS, AAAI, ICoICT</li>
+    <li><b>Conferences</b> ACL, NAACL, EACL, EMNLP, *SEM, COLING, ICLR, ICML, NeurIPS, AAAI, ICoICT</li>
     <li><b>Journals</b> TALLIP, Machine Learning with Applications, Software and Systems Modeling, Frontiers Neurorobot, IEEE Transactions on Audio, Speech and Language Processing</li>
     <li><b>Workshops</b> Humanizing AI at IJCAI (2019), 4th Code-Switching Workshop at LREC (2020), SustaiNLP at EMNLP (2020, 2021), Code-Switching Workshop at NAACL (2021)</li>
     </ul>
