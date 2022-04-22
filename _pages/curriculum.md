@@ -41,6 +41,7 @@ nav: true
 <h3>🏆 Awards</h3>
 <hr/>
 <ul>
+<li><b>DialDoc 2022 Best Student Paper Award</b> for Retrieval-Free Knowledge-Grounded Dialogue Response Generation with Adapters</li>
 <li><b>ConvAI 2021 Honorable Mention Award</b> for XPersona: Evaluating Multilingual Personalized Chatbot</li>
 <li><b>Nominee of Data Science Indonesia Award 2021</b> for <b><a href="https://twitter.com/DSWeekends/status/1375440937048961025">Data Researcher</a></b></li>
 <li><b>Regional Winner 2020 Facebook Developer Circles Community Challenge</b> for IndoNLU</li>
