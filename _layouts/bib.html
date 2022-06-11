@@ -18,8 +18,8 @@
     {% else %}
       <div class="title">{{entry.title}}</div>
       <div class="author">
-        {% if entry.author_array.size > 10 %}
-          <em>{{entry.author_array[0].first}} {{entry.author_array[0].last}}, et al. (with other {{entry.author_array.size-1}} authors)</em>
+        {% if entry.author_array.size > 20 %}
+          <em>{{entry.author_array[0].first}} {{entry.author_array[0].last}}, et al. ({{entry.author_array.size}} authors)</em>
         {% else %}
           {% for author in entry.author_array %}
             {% assign author_is_self = false %}
