@@ -17,9 +17,9 @@ news: true  # includes a list of news items
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a Senior Research Engineer/Scientist at Bloomberg LP. Recently, I completed my Ph.D. at the Electronic and Computer Engineering Department and [Center for AI Research (CAiRE)](https://hltchkust.github.io/), The Hong Kong University of Science and Technology. Previously, I finished my Bachelor in Computer Science at Institut Teknologi Bandung. I serve as a program committee and reviewer for various machine learning and natural language processing conferences such as ACL, EMNLP, NeurIPS, ICLR, ICML, and AAAI, and journals.
+I am a Senior Research Engineer/Scientist at Bloomberg LP. Previously, I completed my Ph.D. at the Electronic and Computer Engineering Department and [Center for AI Research (CAiRE)](https://hltchkust.github.io/), The Hong Kong University of Science and Technology. I finished my Bachelor in Computer Science at Institut Teknologi Bandung. I serve as a program committee and reviewer for various machine learning and natural language processing conferences such as ACL, EMNLP, NeurIPS, ICLR, ICML, and AAAI, and journals.
 
-My current research interests lie primarily in the area of the Natural Language Understanding, Multilingual, Cross-lingual, Code-Switching, Dialogue, and Speech. 
+My current research interests lie primarily in the area of the Language Model, Multilingual, Cross-lingual, Code-Switching, Dialogue System, and Speech. 
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
