@@ -34,6 +34,18 @@ nav: true
     <li><b>Workshops</b> Humanizing AI at IJCAI (2019), 4th Code-Switching Workshop at LREC (2020), SustaiNLP at EMNLP (2020, 2021), Code-Switching Workshop at NAACL (2021)</li>
     </ul>
 </li>
+<li><b>Senior Area Chair</b>
+ACL 2023 Industry Track (Interactive Systems / Question Answering)
+<li>
+<li><b>Area Chair / Action Editor</b>
+ACL Rolling Review
+<li>
+<li><b>Workshop Organizer</b>
+    <ul>
+    <li>3rd Workshop of Multilingual Representation Learning (MRL) at EMNLP 2023</li>
+    <li>6th Workshop of Computational Approaches to Linguistic Code-Switching (CALCS) at EMNLP 2023</li>
+    </ul>
+</li>
 <li><b>Student Volunteer</b> EMNLP (2019, 2020)</li>
 </ul>
 
