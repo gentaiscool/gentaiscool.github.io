@@ -2,11 +2,12 @@
 layout: page
 permalink: /talks/
 title: Talks
-description: Invited Presentations and Talks
-nav: false
+description: 
+nav: true
 ---
 
-<div class="talks grid">
-
-
-</div>
+<h3>🎤 Invited Talks</h3>
+<hr/>
+<ul>
+<li>Under construction.</li>
+</ul>
