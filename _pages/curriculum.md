@@ -36,10 +36,10 @@ nav: true
 </li>
 <li><b>Senior Area Chair</b>
 ACL 2023 Industry Track (Interactive Systems / Question Answering)
-<li>
+</li>
 <li><b>Area Chair / Action Editor</b>
 ACL Rolling Review
-<li>
+</li>
 <li><b>Workshop Organizer</b>
     <ul>
     <li>3rd Workshop of Multilingual Representation Learning (MRL) at EMNLP 2023</li>
