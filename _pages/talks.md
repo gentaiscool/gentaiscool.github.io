@@ -9,6 +9,13 @@ nav: true
 <h3>🎤 Invited Talks</h3>
 <hr/>
 <ul>
+<li><b>Duolingo, 20 February 2023</b>
+    <ul>
+        <li><b>Multilingual Transfer Learning in Code-Switching NLP
+</b></li>
+        <li>An invited talk at Duolingo. I presented a topic on my past and recent work on transfer learning methods in Code-Switching NLP.</li>
+    </ul>
+</li>
 <li><b>Bloomberg Black in Tech (BBiT) Lab, 6 July 2022</b>
     <ul>
         <li><b>NLP in Finance</b></li>
@@ -32,6 +39,12 @@ nav: true
 <h3>🏫 Lectures</h3>
 <hr/>
 <ul>
+<li><b>Building NLP Resource for Diverse Indonesian Languages</b>
+    <ul>
+        <li><b>Guest Lecture at Bina Nusantara University, 16 February 2023</b></li>
+        <li>An invited talk to graduate students in the Natural Language Processing postgraduate-level course on building NLP resource for underrepresented languages.</li>
+    </ul>
+</li>
 <li><b>Transfer Learning Approaches on Speech and Language Understanding</b>
     <ul>
         <li><b>Lecture in IF6082 Natural Language Processing Course at Institut Teknologi Bandung, 15 March 2021</b></li>
