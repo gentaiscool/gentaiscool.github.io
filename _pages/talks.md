@@ -9,9 +9,9 @@ nav: true
 <h3>🎤 Invited Talks</h3>
 <hr/>
 <ul>
-<li><b>Cross-Cultural Consideration in NLP Workshop, 5 May 2023</b>
+<li><b>Cross-Cultural Consideration in NLP Workshop at EACL 2023, 5 May 2023</b>
     <ul>
-        <li>An invited panel at C3NLP Workshop with Laura Alonso Alemany, Manuel Mager, and Ife Adebara. The topic of the panel is Learnings from and Challenges in Culturally Situated NLP.</li>
+        <li>An invited panel at C3NLP Workshop colocated at EACL 2023 with Laura Alonso Alemany, Manuel Mager, and Ife Adebara. The topic of the panel is Learnings from and Challenges in Culturally Situated NLP.</li>
     </ul>
 </li>
 <li><b>Duolingo, 20 February 2023</b>
