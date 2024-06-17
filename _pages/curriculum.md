@@ -28,7 +28,7 @@ nav: true
 <h3>🗃️ Professional Activity</h3>
 <hr/>
 <ul>
-<li><b>Reviewer and Program Committee</b>
+<li><b>Area Chair, Reviewer and Program Committee</b>
     <ul>
     <li><b>Conferences</b> ACL, NAACL, EACL, EMNLP, *SEM, COLING, ICLR, ICML, NeurIPS, AAAI, ICoICT</li>
     <li><b>Journals</b> TALLIP, Machine Learning with Applications, Software and Systems Modeling, Frontiers Neurorobot, IEEE Transactions on Audio, Speech and Language Processing</li>
