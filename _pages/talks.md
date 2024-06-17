@@ -8,7 +8,24 @@ nav: true
 
 <h3>🎤 Invited Talks</h3>
 <hr/>
-<ul>
+<li><b>Upcoming: </b>
+    <ul>
+        <li><b>Panel in Fields Matter Workshop, ACL 2024</b></li>
+        <li><b>Hong Kong Polytechnic University (PolyU), July 2024 about "Instruction-Tuned Language Models for Indigenous Indonesian Languages"</b></li>
+    </ul>
+</li>
+<li><b>SPELLL, 7 December 2023</b>
+    <ul>
+        <li><b>Benchmarking Language Models on Underrepresented Languages</b></li>
+        <li>A keynote speech on bencmarking language models for low-resource and underrepresented languages.</li>
+    </ul>
+</li>
+<li><b>University of Toronto 2023, 16 October 2023</b>
+    <ul>
+        <li><b>Assessing The Multilinguality of Language Models on Extremely Low-Resource Languages</b></li>
+        <li>An invited talk to the students and faculty in the post-graduate course at University of Toronto (Host: Prof. Annie Lee).</li>
+    </ul>
+</li>
 <li><b>Cross-Cultural Consideration in NLP Workshop at EACL 2023, 5 May 2023</b>
     <ul>
         <li>An invited panel at C3NLP Workshop colocated at EACL 2023 with Laura Alonso Alemany, Manuel Mager, and Ife Adebara. The topic of the panel is Learnings from and Challenges in Culturally Situated NLP.</li>
