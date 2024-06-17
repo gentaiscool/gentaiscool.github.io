@@ -17,13 +17,13 @@ nav: true
 <li><b>SPELLL, 7 December 2023</b>
     <ul>
         <li><b>Benchmarking Language Models on Underrepresented Languages</b></li>
-        <li>A keynote speech on bencmarking language models for low-resource and underrepresented languages.</li>
+        <li>A keynote speech on benchmarking language models for low-resource and underrepresented languages.</li>
     </ul>
 </li>
 <li><b>University of Toronto 2023, 16 October 2023</b>
     <ul>
         <li><b>Assessing The Multilinguality of Language Models on Extremely Low-Resource Languages</b></li>
-        <li>An invited talk to the students and faculty in the post-graduate course at University of Toronto (Host: Prof. Annie Lee).</li>
+        <li>An invited talk to the students and faculty members at University of Toronto (Host: Prof. Annie Lee).</li>
     </ul>
 </li>
 <li><b>Cross-Cultural Consideration in NLP Workshop at EACL 2023, 5 May 2023</b>
@@ -56,7 +56,6 @@ nav: true
         <li>A talk about the current trend of NLP and its challenges</li>
     </ul>
 </li>
-</ul>
 
 <h3>🏫 Lectures</h3>
 <hr/>
