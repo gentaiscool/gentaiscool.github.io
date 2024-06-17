@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: Bloomberg LP
+description: Capital One AI Foundations
 
 profile:
   align: right
