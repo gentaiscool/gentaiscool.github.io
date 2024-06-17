@@ -16,6 +16,7 @@ nav: true
 <h3>🧑‍💻 Working Experience</h3>
 <hr/>
 <ul>
+<li><b>Senior Applied Scientist</b> at Capital One AI Foundations</li>
 <li><b>Senior Research Scientist</b> at Bloomberg LP</li>
 <li><b>Research Assistant</b> at The Hong Kong University of Science and Technology</li>
 <li><b>Research Intern</b> at Salesforce Research</li>
