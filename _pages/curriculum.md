@@ -43,6 +43,7 @@ ACL Rolling Review
 </li>
 <li><b>Workshop Organizer</b>
     <ul>
+    <li>1st Workshop of Southeast Asian Languages Processing (SEALP) at AACL 2023</li>
     <li>3rd Workshop of Multilingual Representation Learning (MRL) at EMNLP 2023</li>
     <li>6th Workshop of Computational Approaches to Linguistic Code-Switching (CALCS) at EMNLP 2023</li>
     </ul>
@@ -54,9 +55,9 @@ ACL Rolling Review
 <h3>🏆 Awards</h3>
 <hr/>
 <ul>
-<li><b>SEALP 2023 Best Paper Award</b> for IndoToD: A Multi-Domain Indonesian Benchmark For End-to-End Task-Oriented Dialogue Systems</li>
 <li><b>AACL 2023 Best Resource Paper Award</b> for NusaWrites: Constructing High-Quality Corpora for
 Underrepresented and Extremely Low-Resource Languages</li>
+<li><b>SEALP 2023 Best Paper Award</b> for IndoToD: A Multi-Domain Indonesian Benchmark For End-to-End Task-Oriented Dialogue Systems</li>
 <li><b>EACL 2023 Outstanding Paper Award</b> for NusaX: Multilingual Parallel Sentiment Dataset for 10 Indonesian Local Languages</li>
 <li><b>DialDoc 2022 Best Student Paper Award</b> for Retrieval-Free Knowledge-Grounded Dialogue Response Generation with Adapters</li>
 <li><b>ConvAI 2021 Honorable Mention Award</b> for XPersona: Evaluating Multilingual Personalized Chatbot</li>
