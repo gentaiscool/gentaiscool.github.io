@@ -11,7 +11,13 @@ nav: true
 <li><b>Upcoming: </b>
     <ul>
         <li><b>Panel in Fields Matter Workshop, ACL 2024</b></li>
-        <li><b>Hong Kong Polytechnic University (PolyU), July 2024 about "Instruction-Tuned Language Models for Indigenous Indonesian Languages"</b></li>
+        <li><b>University of Toronto Talk, 2024</b></li>
+    </ul>
+</li>
+<li><b>Hong Kong Polytechnic University, 3 July 2024</b>
+    <ul>
+        <li><b>Instruction-Tuned Language Models for Indigenous Indonesian Languages</b></li>
+        <li>An invited talk to the students and faculty members at Hong Kong Polytechnic University for building Instruction-Tuned Language Models for Indonesian Languages.</li>
     </ul>
 </li>
 <li><b>SPELLL, 7 December 2023</b>
