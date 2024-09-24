@@ -1,0 +1,108 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Genta Indra Winata
+
+- title: 🎓 Education
+  type: time_table
+  contents:
+    - title: Ph.D. in Electronic and Computer Engineering
+      institution: The Hong Kong University of Science and Technology
+      description:
+        - <b>Thesis</b> Multilingual Transfer Learning for Code-Switched Language and Speech Neural Modeling
+        - <b>Thesis Supervisor</b> Prof. Pascale Fung
+        - <b>Fellowship/Studentship</b> SENG Ph.D. Fellowship Award and Postgraduate Studentship
+    - title: B.Sc. in Computer Science
+      institution: Institut Teknologi Bandung
+      description:
+        - <b>Thesis</b> Handling Imbalanced Dataset in Multi-label Text Categorization using Bagging and Adaptive Boosting
+        - <b>Thesis Supervisor</b> Dr. Masayu Leylia Khodra
+        - <b>Fellowship/Studentship</b> Beasiswa Unggulan, Tunjangan Kreativitas dan Juara
+        - Graduated with Cum Laude Honor (Top 10%)
+
+- title: 🧑‍💻 Experience
+  type: time_table
+  contents:
+    - title: Senior Applied Scientist
+      institution: Capital One AI Foundations
+      year: 2024 - Present
+    - title: Senior Research Scientist
+      institution: Bloomberg LP
+      year: 2021 - 2024
+    - title: The Hong Kong University of Science and Technology
+      institution: Research Assistant
+      year: 2016 - 2021
+    - title: Research Intern
+      institution: Salesforce Research
+      year: 2020
+    - title: Marketing Technology Analyst
+      institution: Traveloka
+      year: 2016
+
+- title: 🗃️ Professional Activity
+  type: nested_list
+  contents:
+    - title: Program Committee / Area Chair
+      items: 
+        - <b>Conferences</b> ACL, NAACL, EACL, EMNLP, *SEM, COLING, ICLR, ICML, NeurIPS, AAAI, ICoICT
+        - <b>Journals</b> TALLIP, Machine Learning with Applications, Software and Systems Modeling, Frontiers Neurorobot, IEEE Transactions on Audio, Speech and Language Processing
+        - <b>Workshops</b> Humanizing AI at IJCAI (2019), 4th Code-Switching Workshop at LREC (2020), SustaiNLP at EMNLP (2020, 2021), Code-Switching Workshop at NAACL (2021)
+        - Action Editor of ARR
+    - title: Senior Area Chair
+      items: 
+        - ACL Industry Track 2023 (Interactive Systems / Question Answering)
+    - title: Workshop Organizers
+      items:
+        - 1st Workshop of Southeast Asian Languages Processing (SEALP) at AACL 2023
+        - 2nd Workshop of Southeast Asian Languages Processing (SEALP) at COLING 2025
+        - 3rd Workshop of Multilingual Representation Learning (MRL) at EMNLP 2023
+        - 6th Workshop of Computational Approaches to Linguistic Code-Switching (CALCS) at EMNLP 2023
+    - title: Student Volunteer
+      items:
+        - EMNLP (2019, 2020)
+
+
+- title: 🏆 Honors and Awards
+  type: time_table
+  contents:
+    - year: 2023
+      items:
+        - <b>AACL 2023 Best Resource Paper Award</b> for NusaWrites
+        - <b>SEALP 2023 Best Paper Award</b> for IndoToD
+        - <b>EACL 2023 Outstanding Paper Award</b> for NusaX
+    - year: 2022
+      items:
+        - <b>DialDoc 2022 Best Student Paper Award</b> for Retrieval-Free Knowledge-Grounded Dialogue Response Generation with 
+    - year: 2021
+      items:
+        - <b>ConvAI 2021 Honorable Mention Award</b> for XPersona
+        - <b>Nominee of Data Science Indonesia Award 2021</b> for <b><a href="https://twitter.com/DSWeekends/status/1375440937048961025">Data Researcher</a></b>
+    - year: 2020
+      items:
+        - <b>Regional Winner 2020 Facebook Developer Circles Community Challenge</b> for IndoNLU
+    - year: 2019
+      items:
+        - <b>RepL4NLP 2019 Best Paper Award</b> for Learning Multilingual Meta-Embeddings for Code-Switching Named Entity Recognition
+    - year: 2017
+      items:
+        - <b>RepL4NLP 2019 Best Paper Award</b> for Learning Multilingual Meta-Embeddings for Code-Switching Named Entity Recognition
+        - <b>3rd Place</b> Hackathon at UST (HackUST) Transportation Category 2017
+    - year: 2016
+      items:
+        - <b>School of Engineering Ph.D. Fellowship Award 2016</b> for first-year Ph.D. students
+    - year: 2015
+      items:
+        - <b>ICEEI 2015 Best Student Paper Award</b> for Handling Imbalanced Dataset in Multi-label Text Categorization using Bagging and Adaptive Boosting
+    - year: 2014
+      items:
+        - <b>2nd Winner of Gemastik 7 in Data Mining 2014</b> held by Ministry of National Education and Culture Republic of Indonesia, Universitas Gadjah Mada
+        - <b>1st Winner of Gemastik 7 in Business Game 2014</b> held by Ministry of National Education and Culture Republic of Indonesia, Universitas Gadjah Mada
+        - <b>Runner Up of World Summit Youth Award 2014 in Go Green!</b> for GoPublic
+        - <b>World Semifinalist/National Winner of Imagine Cup 2014 in Innovation</b> for Smoothies
+    - year: 2013
+      items:
+        - <b>15th Position in IEEEXtreme 7.0 Programming Competition 2013</b>
+    - year: 2011
+      items:
+        - <b>1st Winner in ThinkQuest International Competition 2011</b> for Project Events (Age 19 and under)
