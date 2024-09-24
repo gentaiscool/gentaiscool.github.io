@@ -10,7 +10,7 @@ nav: true
 **University of Toronto Talk, 11 September 2024**
 - Multilingual Language Models as Semantic Retrievers
 
-**Panel in Fields Matter Workshop, 16 August ACL 2024**
+**Panel in Fields Matter Workshop, ACL, 16 August 2024**
 - Insights from Language Resource Collection in Linguistically Diverse Southeast Asian Languages
 - Co-presenting with Alham Fikri Aji
 
