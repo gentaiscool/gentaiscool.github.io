@@ -18,4 +18,4 @@ I am a Senior Applied Scientist in the LLM Pretraining Team at Capital One AI Fo
 
 My current research interests lie primarily in the area of the Language Models, Multilingual, Code-Switching, Low-Resource NLP, and Dialogue System.
 
-Join our new global initiative [Grassroots Science](https://grassroots.science/)!
+Join our new global open-source initiative [Grassroots Science](https://grassroots.science/)!
