@@ -47,6 +47,10 @@ nav: true
 
 
 ## 🏫 Lectures
+**Multilingual Language Modeling**
+- Guest Lecture at Universitas Sumatera Utara, 6 December 2024, 9 December 2024
+- An invited talk to students and faculty.
+
 **Building NLP Resource for Diverse Indonesian Languages**
 - Guest Lecture at Bina Nusantara University, 16 February 2023
 - An invited talk to graduate students in the Natural Language Processing postgraduate-level course on building NLP resource for underrepresented languages.
