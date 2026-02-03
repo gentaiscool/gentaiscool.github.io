@@ -44,13 +44,13 @@
   type: nested_list
   contents:
     - title: Program Committee / Area Chair
-      items: 
+      items:
         - <b>Conferences</b> ACL, NAACL, EACL, EMNLP, *SEM, COLING, ICLR, ICML, NeurIPS, AAAI, ICoICT
         - <b>Journals</b> TALLIP, Machine Learning with Applications, Software and Systems Modeling, Frontiers Neurorobot, IEEE Transactions on Audio, Speech and Language Processing
         - <b>Workshops</b> Humanizing AI at IJCAI (2019), 4th Code-Switching Workshop at LREC (2020), SustaiNLP at EMNLP (2020, 2021), Code-Switching Workshop at NAACL (2021)
         - Action Editor of ARR
     - title: Senior Area Chair
-      items: 
+      items:
         - ACL Industry Track 2023 (Interactive Systems / Question Answering)
     - title: Workshop Organizers
       items:
@@ -64,7 +64,6 @@
       items:
         - EMNLP (2019, 2020)
 
-
 - title: 🏆 Honors and Awards
   type: time_table
   contents:
@@ -75,7 +74,7 @@
         - <b>EACL 2023 Outstanding Paper Award</b> for NusaX
     - year: 2022
       items:
-        - <b>DialDoc 2022 Best Student Paper Award</b> for Retrieval-Free Knowledge-Grounded Dialogue Response Generation with 
+        - <b>DialDoc 2022 Best Student Paper Award</b> for Retrieval-Free Knowledge-Grounded Dialogue Response Generation with
     - year: 2021
       items:
         - <b>ConvAI 2021 Honorable Mention Award</b> for XPersona
