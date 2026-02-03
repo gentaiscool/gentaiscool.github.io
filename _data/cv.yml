@@ -70,8 +70,11 @@
     - year: 2025
       items:
         - <b>NAACL 2025 Best Theme Paper Award</b> for WorldCuisines
-        - <b>Capital One TechX Award</b>
+        - <b>Capital One TechX Team Award</b>
         - <b>Capital One CIO Award</b>
+    - year: 2024
+      items:
+        - <b>TMLR 2024 Outstanding Paper Finalist</b> for BigBench
     - year: 2023
       items:
         - <b>AACL 2023 Best Resource Paper Award</b> for NusaWrites
