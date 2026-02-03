@@ -67,6 +67,11 @@
 - title: 🏆 Honors and Awards
   type: time_table
   contents:
+    - year: 2025
+      items:
+        - <b>NAACL 2025 Best Theme Paper Award</b> for WorldCuisines
+        - <b>Capital One TechX Award</b>
+        - <b>Capital One CIO Award</b>
     - year: 2023
       items:
         - <b>AACL 2023 Best Resource Paper Award</b> for NusaWrites
