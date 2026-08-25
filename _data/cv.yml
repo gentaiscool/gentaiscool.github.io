@@ -1,9 +1,3 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Genta Indra Winata
-
 - title: 🎓 Education
   type: time_table
   contents:
