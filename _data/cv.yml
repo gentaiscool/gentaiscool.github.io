@@ -46,6 +46,10 @@
 - title: 🗃️ Professional Activity
   type: nested_list
   contents:
+    - title: Senior Area Chair
+      items:
+        - <b>Conferences</b> AACL 2026 (LLM Agents Track)
+        
     - title: Program Committee / Area Chair
       items:
         - <b>Conferences</b> ACL, NAACL, EACL, EMNLP, *SEM, COLING, ICLR, ICML, NeurIPS, AAAI, ICoICT
