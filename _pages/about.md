@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Capital One AI Foundations
+subtitle: Capital One
 
 profile:
   align: right
