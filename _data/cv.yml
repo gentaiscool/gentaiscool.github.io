@@ -1,20 +1,3 @@
-- title: 🎓 Education
-  type: time_table
-  contents:
-    - title: Ph.D. in Electronic and Computer Engineering
-      institution: The Hong Kong University of Science and Technology
-      description:
-        - <b>Thesis</b> Multilingual Transfer Learning for Code-Switched Language and Speech Neural Modeling
-        - <b>Thesis Supervisor</b> Prof. Pascale Fung
-        - <b>Fellowship/Studentship</b> SENG Ph.D. Fellowship Award and Postgraduate Studentship
-    - title: B.Sc. in Computer Science
-      institution: Institut Teknologi Bandung
-      description:
-        - <b>Thesis</b> Handling Imbalanced Dataset in Multi-label Text Categorization using Bagging and Adaptive Boosting
-        - <b>Thesis Supervisor</b> Dr. Masayu Leylia Khodra
-        - <b>Fellowship/Studentship</b> Beasiswa Unggulan, Tunjangan Kreativitas dan Juara
-        - Graduated with Cum Laude Honor (Top 10%)
-
 - title: 🧑‍💻 Experience
   type: time_table
   contents:
@@ -36,6 +19,23 @@
     - title: Marketing Technology Analyst
       institution: Traveloka
       year: 2016
+
+- title: 🎓 Education
+  type: time_table
+  contents:
+    - title: Ph.D. in Electronic and Computer Engineering
+      institution: The Hong Kong University of Science and Technology
+      description:
+        - <b>Thesis</b> Multilingual Transfer Learning for Code-Switched Language and Speech Neural Modeling
+        - <b>Thesis Supervisor</b> Prof. Pascale Fung
+        - <b>Fellowship/Studentship</b> SENG Ph.D. Fellowship Award and Postgraduate Studentship
+    - title: B.Sc. in Computer Science
+      institution: Institut Teknologi Bandung
+      description:
+        - <b>Thesis</b> Handling Imbalanced Dataset in Multi-label Text Categorization using Bagging and Adaptive Boosting
+        - <b>Thesis Supervisor</b> Dr. Masayu Leylia Khodra
+        - <b>Fellowship/Studentship</b> Beasiswa Unggulan, Tunjangan Kreativitas dan Juara
+        - Graduated with Cum Laude Honor (Top 10%)
 
 - title: 🗃️ Professional Activity
   type: nested_list
