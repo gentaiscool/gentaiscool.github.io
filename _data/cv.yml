@@ -48,7 +48,8 @@
   contents:
     - title: Senior Area Chair
       items:
-        - <b>Conferences</b> AACL 2026 (LLM Agents Track)
+        - AACL 2026 (LLM Agents)
+        - ACL Industry Track 2023 (Interactive Systems / Question Answering)
         
     - title: Program Committee / Area Chair
       items:
@@ -56,9 +57,7 @@
         - <b>Journals</b> TALLIP, Machine Learning with Applications, Software and Systems Modeling, Frontiers Neurorobot, IEEE Transactions on Audio, Speech and Language Processing
         - <b>Workshops</b> Humanizing AI at IJCAI (2019), 4th Code-Switching Workshop at LREC (2020), SustaiNLP at EMNLP (2020, 2021), Code-Switching Workshop at NAACL (2021)
         - Action Editor of ARR
-    - title: Senior Area Chair
-      items:
-        - ACL Industry Track 2023 (Interactive Systems / Question Answering)
+        
     - title: Workshop Organizers
       items:
         - 1st Workshop of Southeast Asian Languages Processing (SEALP) at AACL 2023
